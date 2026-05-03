@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Relief</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- NAVIGATION ADDED -->
+    <div class="sr-nav-wrapper">
+        <nav class="sr-nav">
+            <div class="serif" style="font-size: 26px; font-weight: bold; color: var(--brand-primary);">Relief.</div>
+            <div class="nav-links-center">
+                <div class="dropdown">
+                    <a href="#" class="nav-link">All Pages ▼</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="meditation.html">Daily Meditation</a>
+                        <a href="journal.html">Smart Journal</a>
+                        <a href="sos.html">SOS Support</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+                <a href="signup.html" class="sr-button btn-filled" id="nav-auth-btn">Get Started</a>
+        </nav>
+    </div>
+
+    <section class="container">
+        <div class="contact-header">
+            <h1 class="serif">Contact Us</h1>
+            <p>Your questions, concerns, and feelings matter to us.</p>
+        </div>
+
+        <div class="contact-grid">
+            <div class="info-column">
+                <div class="info-card">
+                    <h4>📞 Call Us Now</h4>
+                    <p>Inquiries: +92 (646) 555-9021</p>
+                    <p>Support: +92 (215) 555-1180</p>
+                </div>
+                <div class="info-card">
+                    <h4>✉️ Email Us</h4>
+                    <p>Inquiries: contact@company.com</p>
+                    <p>Support: support@company.com</p>
+                </div>
+            </div>
+
+            <div class="form-card">
+                <h2 class="serif">Your Details</h2>
+                <form>
+                    <div class="input-group-row">
+                        <div class="input-item"><label>Full name</label><input type="text"
+                                placeholder="Enter your Name"></div>
+                        <div class="input-item"><label>Phone number</label><input type="text"
+                                placeholder="XXX-XXX-XXXX"></div>
+                    </div>
+                    <div class="input-group-row">
+                        <div class="input-item"><label>Email address</label><input type="email"
+                                placeholder="Enter your gmail"></div>
+                        <div class="input-item">
+                            <label>Reason</label>
+                            <select>
+                                <option>Select one...</option>
+                                <option>Therapy</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input-item"><label>Message</label><textarea rows="4"></textarea></div>
+                    <button type="button" class="submit-btn">Contact Us</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="container faq-section">
+        <h2 class="serif">Frequently Asked Questions</h2>
+        <div class="faq-container">
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(0)">What exactly is therapy? <span>▼</span></div>
+                    <div class="faq-answer" id="faq-0">Therapy is a safe space to discuss your feelings with a
+                        professional.</div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question" onclick="toggleFaq(1)">Is my information private? <span>▼</span></div>
+                    <div class="faq-answer" id="faq-1">Yes, 100% confidential.</div>
+                </div>
+            </div>
+            <div class="faq-image">
+                <!-- Using a web link to ensure it shows up, replace with your local file name if it's in the same folder -->
+                <img src="assets/images/Untitled design.png" alt="Therapy Session">
+            </div>
+        </div>
+    </section>
+
+    <!-- Orbit Section -->
+    <div class="container">
+        <section class="orbit-section">
+            <div class="ring ring-1">
+                <div class="user-pic pos-top"
+                    style="background-image: url('https://randomuser.me/api/portraits/men/1.jpg');"></div>
+            </div>
+            <div class="ring ring-2">
+                <div class="user-pic pos-left"
+                    style="background-image: url('https://randomuser.me/api/portraits/women/2.jpg');"></div>
+                <div class="user-pic pos-right"
+                    style="background-image: url('https://randomuser.me/api/portraits/men/3.jpg');"></div>
+            </div>
+            <div class="orbit-content">
+                <h2 class="serif">Start Your Healing</h2>
+                <p>Begin your journey today.</p>
+            </div>
+        </section>
+    </div>
+
+    <script src="assets/js/contact.js"></script>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="serif footer-logo">Relief.</div>
+                    <p style="font-size: 0.9rem; opacity: 0.7;">Your partner in mental wellness and emotional balance.
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="sos.html">SOS Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 15px;">Subscribe to get wellness tips.</p>
+                    <input type="text" placeholder="Email Address"
+                        style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; width: 100%;">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Relief Minds. All rights reserved.</p>
+                <p>Designed with ❤️ for Mental Health</p>
+            </div>
+        </div>
+    </footer>
+<script type="module" src="assets/js/auth-check.js"></script>
+</body>
+
+</html>

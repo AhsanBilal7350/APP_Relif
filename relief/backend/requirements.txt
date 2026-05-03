@@ -1,0 +1,7 @@
+fastapi
+groq
+mangum
+firebase-admin
+uvicorn
+python-dotenv
+email-validator

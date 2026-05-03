@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Journal | Relief</title>
+    <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <!-- NAVIGATION -->
+    <div class="sr-nav-wrapper">
+        <nav class="sr-nav">
+            <div class="serif footer-logo" style="color: var(--brand-primary); margin-bottom: 0;">Relief.</div>
+            <div class="nav-links-center">
+                <div class="dropdown">
+                    <a href="#" class="nav-link">All Pages ▼</a>
+                    <div class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="meditation.html">Daily Meditation</a>
+                        <a href="journal.html">Smart Journal</a>
+                        <a href="sos.html">SOS Support</a>
+                    </div>
+                </div>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+                <a href="signup.html" class="sr-button btn-filled" id="nav-auth-btn">Get Started</a>
+        </nav>
+    </div>
+
+    <!-- CHAT AREA -->
+    <main class="main-content" style="padding: 30px 20px;">
+        <div class="chat-wrapper">
+            <div class="chat-header">
+                <div>
+                    <h2 class="serif">AI Wellness Companion</h2>
+                    <p style="opacity: 0.6; font-size: 14px;">Share your thoughts. This is your safe space.</p>
+                </div>
+                <button class="chat-clear-btn" id="clearChat" title="Start new conversation">✕ Clear</button>
+            </div>
+
+            <div class="chat-messages" id="chatMessages">
+                <div class="chat-welcome-msg">
+                    <div class="welcome-icon">🌿</div>
+                    <h3 class="serif">Hello, I'm here for you</h3>
+                    <p>Share whatever is on your mind — your feelings, your day, or anything you'd like to talk about. I'll listen and offer supportive insights.</p>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <input type="text" id="chatInput" placeholder="Type your thoughts here..." autocomplete="off">
+                <button id="sendBtn" class="chat-send-btn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                </button>
+            </div>
+
+            <a href="index.html" class="back-link" style="margin-top: 15px; text-align: center; display: block;">← Back to Home</a>
+        </div>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="serif footer-logo">Relief.</div>
+                    <p style="font-size: 0.9rem; opacity: 0.7;">Your partner in mental wellness and emotional balance.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="sos.html">SOS Help</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Newsletter</h4>
+                    <p style="font-size: 0.8rem; opacity: 0.7; margin-bottom: 15px;">Subscribe to get wellness tips.</p>
+                    <input type="text" placeholder="Email Address" style="padding: 10px; border: 1px solid #ddd; border-radius: 5px; width: 100%;">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 Relief Minds. All rights reserved.</p>
+                <p>Designed with ❤️ for Mental Health</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/journal.js"></script>
+    <script type="module" src="assets/js/auth-check.js"></script>
+</body>
+</html>
